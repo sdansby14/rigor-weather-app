@@ -1,6 +1,6 @@
 const OPEN_WEATHER_URL = 'https://api.openweathermap.org/data/2.5';
 const OPEN_CAGE_URL = 'https://api.opencagedata.com/geocode/v1';
-const api_key = 'e667daa519e5906a2449e266ce416e75';
+const api_key = '524589f12ff60e2a150e470595208862';
 const open_cage_key = '0264db5477fe4b1c9ee9ae23b3ec59e5';
 
 const fetchSevenDay = (lat, lon) => {
