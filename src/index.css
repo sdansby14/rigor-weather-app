@@ -1,13 +1,78 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  --font-primary: #000;
+  --font-secondary: #808080;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--font-primary);
+  font-size: 16px;
+}
+
+.App {
+  width: 70%;
+  margin: 2rem auto;
+}
+
+.app_header {
+  text-align: center;
+}
+
+.card_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  text-align: center;
+}
+
+.card {
+  color: var(--font-secondary);
+  max-width: 170px;
+  box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.2);
+  padding: 1em 1em 0;
+  border-radius: 0.4em;
+  transition: 0.3s;
+  margin: 8px 8px;
+}
+
+.main_card {
+  color: var(--font-secondary);
+  max-width: 170px;
+  padding: 1em 1em 0;
+  border-radius: 0.4em;
+  transition: 0.3s;
+  margin: 8px 8px;
+}
+
+.weather_description {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.temp {
+  color: var(--font-primary);
+  font-size: 2.4rem;
+}
+
+.degrees {
+  color: var(--font-secondary);
+  font-size: 1rem;
+}
+
+.temp_container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 8px;
+}
+
+.max_temp {
+  color: var(--font-primary);
 }
